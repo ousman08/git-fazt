@@ -1,0 +1,102 @@
+/* Reset básico para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mejora el control del ancho/alto de los elementos */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Contenedor general centrado */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Cabecera del sitio */
+.cabecera {
+    background-color: #3a0f0f;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #750d0d;
+    padding: 10px 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Artículos */
+article {
+    background-color: #fff7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 2;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+article time {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Lateral (aside) */
+.lateral {
+    flex: 1;
+    background-color: #fffbb9;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.lateral blockquote {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #750d0d;
+    background-color: #fffbe0;
+    font-style: italic;
+}
+
+/* Pie de página */
+.pie {
+    clear: both;
+    background-color: #911410;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}

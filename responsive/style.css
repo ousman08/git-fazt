@@ -1,0 +1,124 @@
+/* Reset básico: elimina márgenes y relleno por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal centrado */
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cabecera del blog */
+.cabecera {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Menú de navegación */
+.menu {
+  background-color: #8b0000;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Contenedor del contenido principal: artículos + lateral */
+.contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Artículos principales */
+.articulos {
+  flex: 2; /* ocupa 2 partes del espacio */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.articulos article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Imágenes */
+.articulos img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Aside o columna lateral */
+.lateral {
+  flex: 1; /* ocupa 1 parte del espacio */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lateral blockquote {
+  background-color: #fff3cd;
+  padding: 20px;
+  border-left: 5px solid #ffa502;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+/* Pie de página */
+.pie {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ========== Media Queries: Adaptación a móviles ========== */
+
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column; /* Coloca secciones una debajo de otra */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+}

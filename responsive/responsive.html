@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Contenedor general del blog -->
+  <div class="contenedor">
+
+    <!-- Cabecera principal -->
+    <header class="cabecera">
+      <h1>Mi Blog</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Principal</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cuerpo principal con dos columnas -->
+    <main class="contenido">
+
+      <!-- Sección de artículos -->
+      <section class="articulos">
+
+        <!-- Primer artículo -->
+        <article>
+          <header>
+            <h2>Título del Primer Artículo</h2>
+            <h3>Subtítulo del primer artículo</h3>
+          </header>
+
+          <!-- Imagen representativa -->
+          <img src="imagen/ejemplo.jpg" alt="Una persona abatida" />
+
+          <!-- Fecha -->
+          <time datetime="2020-05-11">Publicado: 11-05-2020</time>
+
+          <!-- Contenido -->
+          <p>
+            Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. 
+            <small>Consectetur pariatur</small>, <em>eos eveniet</em> rerum nobis.
+            <cite>Autor desconocido</cite>.
+          </p>
+
+          <!-- Pie del artículo -->
+          <footer>
+            <p>Comentarios (0)</p>
+          </footer>
+
+          <!-- Fuente -->
+          <address>
+            Fuente: <a href="https://faztweb.com" target="_blank">Faztweb</a>
+          </address>
+        </article>
+
+        <!-- Segundo artículo -->
+        <article>
+          <header>
+            <h2>Título del Segundo Artículo</h2>
+            <h3>Subtítulo del segundo artículo</h3>
+          </header>
+
+          <time datetime="2020-05-11">Publicado: 11-05-2020</time>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi veniam
+            libero, distinctio quae voluptates.
+          </p>
+
+          <footer>
+            <p>Comentarios (10)</p>
+          </footer>
+        </article>
+
+      </section>
+
+      <!-- Barra lateral con mensajes destacados -->
+      <aside class="lateral">
+        <blockquote cite="https://ejemplo.com">Mensaje 1 destacado</blockquote>
+        <blockquote cite="https://ejemplo.com">Mensaje 2 destacado</blockquote>
+      </aside>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+      <p>Derechos Reservados © 2010 - 2025</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
